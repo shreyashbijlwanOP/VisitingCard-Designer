@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+:root{
+    --width:300px;
+    --height:18vh;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+}
+aside{
+    height: 100vh;
+    width: var(--width);
+    /* border: 2px solid red; */
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - var(--width) );
+    /* border: 2px solid green; */
+    background-color: lightgreen;
+    height: 100vh;
+}
+.toolbar-2{
+    /* border: 2px solid blue; */
+    height: var(--height);
+    background-color: lightgrey;
+}
+.toolbar-2>*{
+    margin-bottom: 10px;
+}
+.content{
+    /* border: 3px solid violet; */
+    height: calc(100vh - var(--height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.view{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 230px;
+    padding: 10px 0px;
+}
+
+.view >*{
+    padding: 10px;
+    box-shadow: 0px 0px 10px  black;
+
+}
+/***************************** Visiting Card Section ********************/
+.visitingcards{
+    width: 500px;
+    height: 300px;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: cadetblue;
+    color: white;
+    background-position: center;
+    background-size:contain;
+    box-shadow: 0px 0px 10px black;
+}
+.logo{
+    width: 90px;
+    height: 70px;
+    padding: 5px;
+    align-self: flex-start;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.address{
+    align-self: flex-end;
+    width:300px;
+    padding: 10px;
+    color: lightgrey;
+}
+.cardname{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    padding: 2px 0px;
+    font-size: 2.5rem;
+}
+/***************************** Visiting Card Section ********************/
+
+
+
+
+/***************************** Toolbar-1 Section ********************/
+.toolbar-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: lightgray;
+}
+
+
+
+.backgroud-image h4, .backgroud-color h4 ,.background-logo h4,.background-title h4 {
+    padding: 10px 0px;
+}
+.backgroud-color, .backgroud-image,.background-logo{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    /* border: 2px solid red; */
+    /* border: 4px solid red; */
+    align-items: center;
+    margin: 0px auto;
+    justify-content: space-between;
+}
+.backgroud-image{
+    align-items: center;
+    /* border: 2px solid yellow; */
+}
+
+.backgroud-color .h4 ,.backgroud-image .h4 ,.background-logo .h4, .background-title .h4{
+    align-self: flex-start !important;
+}
+.backgroud-image input[type="url"],.background-logo input[type="url"]
+{
+    align-self: stretch !important;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+.background-logo{
+    height: 26vh;
+}
+
+.pallate,.pllate2,.pllate3, .pllate4{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.pallate button , .pllate2 button,.pllate3 button ,.pllate4 button{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+   
+}
+.logo-align{
+    display: flex;
+    width: 60%;
+    padding: 5px 0px;
+    justify-content: space-between;
+}
+.logo-align >*{
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+}
+
+.background-title{
+    display: flex;
+    /* border: 2px solid violet; */
+    flex-direction: column;
+    width: 95%;
+    height: 18vh;
+    gap: 10px;
+    margin: auto;
+}
+/***************************** Toolbar-1 Section ********************/
+
+
+
+/***************************** Toolbar-2 Section ********************/
+
+.h2{
+    height: 5vh !important;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ownername{
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/***************************** Toolbar-2 Section ********************/
+
